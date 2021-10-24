@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин часов</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-        <img src="assets/img/logo_conquest.svg" alt="logo_CONQUEST" class="header-logo">
+        <img src="assets/img/logo_conquest.svg" alt="logo_CONQUEST" class="header-logo" width="103px" height="26">
         <nav class="header-nav-menu">
-            <ul class="header-ul-lists">
+            <ul class="header-ul-lists list-marker">
                 <li class="header-li-lists"><a href="#" class="header-menu-link">каталог</a></li>
                 <li class="header-li-lists"><a href="#" class="header-menu-link">акции</a></li>
                 <li class="header-li-lists"><a href="#" class="header-menu-link">доставка</a></li>
                 <li class="header-li-lists"><a href="#" class="header-menu-link">контакты</a></li>
             </ul>
-            <ul class="header-nav-icon">
+            <ul class="header-nav-icon list-marker">
                 <li class="header-li-lists"><a href="#" class="nav-icon"><img src="assets/icon/search.svg" alt="icon_search" class="icon"></a></li>
                 <li class="header-li-lists"><a href="#" class="nav-icon"><img src="assets/icon/like.svg" alt="icon_like" class="icon"></a></li>
                 <li class="header-li-lists"><a href="#" class="nav-icon"><img src="assets/icon/basket.svg" alt="icon_basket" class="icon"></a></li>
@@ -25,7 +26,7 @@
     </header>
     <main class="main">
         <section class="main-promo">
-                <h1 class="main-heading">conquest - интернет магазин наручных часов</h1>
+                <h1 class="visually-hidden">conquest - интернет магазин наручных часов</h1>
                 <div class="section-promo-heding">
                     <h2 class="heading">весна/лето 2022</h2>
                     <h3 class="heading">коллекция</h3>
@@ -37,7 +38,15 @@
                 
                 <button class="button-promo">смотреть каталог</button>
                 <img src="assets/img/Ellipse.svg" alt="background ellips" class="background-promo">
-                <img src="assets/img/watch_main.png" alt="wristwatch rado" class="watch-promo">
+                <img src="assets/img/watch_main.png" alt="wristwatch rado" class="watch-promo" width="502" height="804">
+                <span class="promo__price">22 000
+                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.04761 0.500854H6.03569C7.72543 0.500854 9.09524 1.87066 9.09524 3.5604C9.09524 5.25014 7.72543 6.61995 6.03569 6.61995H2.04761V0.500854Z" stroke="#1B1A17"/>
+                      <path d="M2 6.50085H0" stroke="#1B1A17"/>
+                      <path d="M2.00006 0.000854492V13.0009M0.30957 9.69562H6.80958" stroke="#1B1A17"/>
+                    </svg>
+                  </span>
+                  <span class="promo__characteristics">28 мм диаметр</span>
             </section>
             <section class="main-popular">
                 <h3 class="heading">популярные модели</h3>
@@ -45,10 +54,10 @@
                 <article class="popular-card">
                     <header>
                         <h3>rado</h3>
-                        <p>65300</p>
+                        <span>65300</span>
                     </header>
                     <p>
-                        <img src="assets/img/rado_popular_watch_1.svg" alt="wristwatch rado" class="card-watch">
+                        <img src="assets/img/rado_popular_watch_1.png" alt="wristwatch rado" class="card-watch" width="313" height="313">
                    </p>
                    <footer>
                        <a href="#">подробнее</a>
@@ -57,10 +66,10 @@
                 <article class="popular-card">
                     <header>
                         <h3>bvlgari</h3>
-                        <p>81700</p>
+                        <span>81700</span>
                     </header>
                     <p>
-                        <img src="assets/img/bvlgari_popular_watch_2.svg" alt="wristwatch bvlgari" class="card-watch">
+                        <img src="assets/img/bvlgari_popular_watch_2.png" alt="wristwatch bvlgari" class="card-watch" width="313" height="313">
                    </p>
                    <footer>
                         <a href="#">подробнее</a>
@@ -69,10 +78,10 @@
                 <article class="popular-card">
                     <header>
                         <h3>bvlgari</h3>
-                        <p>72700</p>
+                        <span>72700</span>
                     </header>
                     <p>
-                        <img src="assets/img/bvlgari_popular_watch_3.svg" alt="wristwatch bvlgari" class="card-watch">
+                        <img src="assets/img/bvlgari_popular_watch_3.png" alt="wristwatch bvlgari" class="card-watch" width="313" height="313">
                     </p>
                     <footer>
                         <a href="#">подробнее</a>
@@ -86,66 +95,82 @@
                 <div class="slider">
                     <h2>подлинное качество</h2>
                     <p>Все часы производятся в Швейцарии и имеют<br>сертификаты качества. Настоящие швейцарские<br>часы — это предмет гордости и престижа.</p>
-                    <button class="slider-button">смотреть каталог</button>
+                    <a class="advantages__link" href="#">Смотреть каталог</a>
+                    <div class="advantages__slider-control slider-control">
+                        <button class="advantages__button button" type="button">Предыдущий</button>
+                        <span class="slider-control__position">01</span>
+                        <button class="advantages__button button" type="button">Следующий</button>
+                      </div>
                 </div>
             </section>
             <section class="main-news">
-                <div class="block-news">
-                    <h2>следите за нашими новостями</h2>
-                    <p>Подписывайтесь на <b>x@conquest_watch</b> в соцсетях и узнавайте о новинках и акциях первыми.</p>
+                <h2 class="visually-hidden">подписка на новости</h2>
+                <div class="block-news__left">
+                    <p class="news-company">следите за нашими новостями</p>
+                    <p>Подписывайтесь на <strong>x@conquest_watch</strong> в соцсетях и узнавайте о новинках и акциях первыми.</p>
+                
+                    <div class="icon_socnetwork">
+                        <a href="#" class="inst">
+                            <img src="assets/icon/instagram_icon.png" alt="instagram">
+                        </a>
+                        <a href="#" class="fb">
+                            <img src="assets/icon/facebook_icon.png" alt="facebook">
+                        </a>
+                        <a href="#" class="twit">
+                            <img src="assets/icon/twitter_icon.png" alt="twitter">
+                        </a>
+                    </div>
                 </div>
-                <div class="icon_socnetwork">
-                    <a href="#" class="inst">
-                        <img src="" alt="">
+                <div class="block-news__right">
+                    <a href="#">
+                        <img src="assets/img/collage_photo_1.jpg" alt="wristwatch1" class="collage" width="242" height="228">
                     </a>
-                    <a href="#" class="fb">
-                        <img src="" alt="">
+                    <a href="#">
+                        <img src="assets/img/collage_photo_2.jpg" alt="wristwatch2" class="collage" width="377" height="460">
                     </a>
-                    <a href="#" class="twit">
-                        <img src="" alt="">
+                    <a href="#">
+                        <img src="assets/img/collage_photo_3.jpg" alt="wristwatch3" class="collage" width="242" height="228">
                     </a>
-                </div>
-                <div class="collage_news">
-                    <img src="assets/img/collage_photo_1.jpg" alt="wristwatch" class="collage">
-                    <img src="assets/img/collage_photo_2.jpg" alt="wristwatch" class="collage">
-                    <img src="assets/img/collage_photo_3.jpg" alt="wristwatch" class="collage">
                 </div>
             </section>
     </main>
     <footer class="footer">
-        <div class="footer-block1">
-        <img src="assets/img/logo_conquest.svg" alt="logo_CONQUEST" class="footer-logo">
-        
+        <div class="footer-block-logo">
+            <a href="" class="page-footer-logo">
+                <img src="assets/img/logo_conquest.svg" alt="logo_CONQUEST" class="footer-logo">
+            </a>
         </div>
-        <ul class="contacts">
-            <li>8 (499) 450-47-97</li>
-            <li><a href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a></li>
-        </ul>
+        <div class="page-footer__wrapper">
+            <ul class="contacts list-marker">
+                <li>8 (499) 450-47-97</li>
+                <li><a href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a></li>
+            </ul>
+        </div>
         <div class="about-company">
             <h3>о компании</h3>
-            <ul>
-                <li>наши магазины</li>
-                <li>вакансии</li>
-                <li>сертификаты</li>
-                <li>отзывы</li>
+            <ul class="list-marker">
+                <li><a href="#">наши магазины</a> </li>
+                <li><a href="#">вакансии</a></li>
+                <li><a href="#">сертификаты</a></li>
+                <li><a href="#">отзывы</a></li>
             </ul>
         </div>
         <div class="buyers">
             <h3>покупателям</h3>
-            <ul>
-                <li>каталог товаров</li>
-                <li>как заказать?</li>
-                <li>вопросы и ответы</li>
-                <li>корпоративным клиентам</li>
+            <ul class="list-marker">
+                <li><a href="#">каталог товаров</a></li>
+                <li><a href="#">как заказать?</a></li>
+                <li><a href="#">вопросы и ответы</a></li>
+                <li><a href="#">корпоративным клиентам</a></li>
             </ul>
         </div>
         <div class="payment">
             <h3>оплата и доставка</h3>
-            <ul>
-                <li>способы оплаты</li>
-                <li>время доставки</li>
-                <li>гарантии и ремонт</li>
-                <li>возврат и компенсация</li>
+            <ul class="list-marker">
+                <li><a href="#">способы оплаты</a></li>
+                <li><a href="#">время доставки</a>/li>
+                <li><a href="#">гарантии и ремонт</a></li>
+                <li><a href="#">возврат и компенсация</a></li>
             </ul>
         </div>
     </footer>
