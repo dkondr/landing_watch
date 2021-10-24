@@ -2,12 +2,11 @@ body{
     margin: 0 auto;
 }
 
-
+.header-ul-lists li, .header-nav-icon li {
+    margin: 0; padding: 0;
+    display: inline-block; 
+}
 
 .list-marker{
     list-style-type: none;
-}
-
-.visually-hidden{
-
 }
